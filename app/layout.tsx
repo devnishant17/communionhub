@@ -13,9 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yet to Explore",
-  description:
-    "Discover and book unique stays in hidden and unexplored destinations. Find offbeat hotels, cozy homestays, and adventure retreats away from the crowds.",
+  title: "Communion",
+  description: "Connecting People Across Faiths & Interests",
+  icons: {
+    icon: "/favicon.ico", // Ensure this file exists in the `public/` folder
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
