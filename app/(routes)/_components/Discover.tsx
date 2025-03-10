@@ -14,7 +14,7 @@ function Discover() {
         </h2>
         <div className="w-[140px] h-1.5 bg-[#484848] rounded-[3px]"></div>
         <p className="text-[#9a9a9a] text-sm sm:text-base font-normal font-montserrat leading-relaxed">
-        Communion is not just another platform—it's a vibrant space that unites diverse faiths, beliefs, and traditions. By promoting collaboration and connection, we're fostering a world where differences become strengths and unity becomes the norm.
+        Communion is not just another platform—its a vibrant space that unites diverse faiths, beliefs, and traditions. By promoting collaboration and connection, were fostering a world where differences become strengths and unity becomes the norm.
         </p>
         <div className="flex flex-wrap items-center gap-4">
           {/* Ask A Question and List A Property on the same line */}
