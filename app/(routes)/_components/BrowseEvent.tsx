@@ -2,7 +2,7 @@ import React from 'react'
 
 function BrowsePropertise() {
   return (
-    <div className="w-auto lg:mx-8  mx-4 mt-22 px-4 sm:px-6 lg:px-8 bg-[#1cb2f6]">
+    <div className="w-auto lg:mx-8  mx-4 mt-42 px-4 sm:px-6 lg:px-8 bg-[#1cb2f6]">
     <div className="relative rounded-xl h-[427px]">
       {/* Overlay
 {/* <div className="w-[90%] lg:w-[100%] max-w-[1206px] h-[395px] absolute bg-black/10 rounded-xl ml-6 top-[12px] lg:left-[15px] left-[-5px]" /> */}
@@ -11,7 +11,7 @@ function BrowsePropertise() {
 
       {/* Title Section */}
       <div className="absolute top-[10%] left-[10%] lg:left-[60px] text-white text-[38px] font-bold font-montserrat leading-[52px]">
-        Discover <br /> More Communities
+      About the <br/>App’s purpose.
       </div>
 
       {/* Subtext */}
@@ -25,7 +25,7 @@ function BrowsePropertise() {
           href="/Events"
           className="text-white text-[15px] font-bold font-montserrat"
         >
-          Create a Community
+          Explore Events
         </a>
       </div>
     </div>

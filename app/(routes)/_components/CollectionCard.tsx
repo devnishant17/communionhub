@@ -13,8 +13,8 @@ interface CardProps {
 const icons = {
   bed: "/static/bed.png",
   vector: "/static/Vector.png",
-  car: "/static/car-icon.png",
-  pet: "/static/pet-icon.png",
+  car: "/static/electric-car.png",
+  pet: "/static/pawprint.png",
 };
 
 const Card: React.FC<CardProps> = ({ title, priceRange, address, details, imageUrl }) => {
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({ title, priceRange, address, details, imageU
           
         />
         {/* Price at the Bottom of Image */}
-        <div className="absolute bottom-2 left-2 text-sm font-medium font-montserrat text-[#9a9a9a]">
+        <div className="absolute bottom-2 left-2 text-sm font-bold font-montserrat text-[#ef0d0d]">
           {priceRange}
         </div>
       </div>
@@ -60,47 +60,41 @@ const Card: React.FC<CardProps> = ({ title, priceRange, address, details, imageU
 const CollectionCard: React.FC = () => {
   const cards: CardProps[] = [
     {
-      title: "Well Furnished Apartment",
+      title: "Well Communication",
       priceRange: "$1000 - 5000 USD",
       address: "Demo address in India",
       details: ["3", "1", "2", "0"],
-      imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
+      imageUrl: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
     },
     {
-      title: "Blue Door Villa Modern",
+      title: "Blue  Modern",
       priceRange: "$1000 - 5000 USD",
       address: "Demo address in India",
       details: ["3", "1", "2", "0"],
-      imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
+      imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
     },
     {
-      title: "Beach House Apartment",
+      title: "Beach House party",
       priceRange: "$1000 - 5000 USD",
       address: "Demo address in India",
       details: ["3", "1", "2", "0"],
-      imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
+      imageUrl: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
     },
     {
-      title: "Country Boys Hostel",
+      title: "Country Boys ",
       priceRange: "$1000 - 5000 USD",
       address: "Demo address in India",
       details: ["3", "1", "2", "0"],
-      imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1681487469745-91d1d8a5836b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
     },
     {
-      title: "Large Family Flat on Rent",
+      title: "Large communication",
       priceRange: "$1000 - 5000 USD",
       address: "Demo address in India",
       details: ["3", "1", "2", "0"],
       imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
     },
-    {
-      title: "Beach House Apartment",
-      priceRange: "$1000 - 5000 USD",
-      address: "Demo address in India",
-      details: ["3", "1", "2", "0"],
-      imageUrl: "https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D",
-    },
+
   ];
 
   return (

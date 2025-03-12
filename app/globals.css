@@ -19,3 +19,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Hide bar */
+.hide-head {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hide-head {
+    display: flex;
+  }
+}
+.hide-small {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+.dropdown-width {
+  max-width: 200px;
+}

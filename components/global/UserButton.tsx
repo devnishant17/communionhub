@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import {
@@ -19,9 +20,11 @@ const UserButton = () => {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-[200px] bg-amber-100 mt-4 mr-10">
+        <DropdownMenuItem className="hide-small "><Link href="/Event">Event</Link></DropdownMenuItem>
+        <DropdownMenuItem className="hide-small "><Link href="/About">About</Link></DropdownMenuItem>
         <DropdownMenuItem>Sign up</DropdownMenuItem>
-        <DropdownMenuItem>Login</DropdownMenuItem>
-        <DropdownMenuItem>Event</DropdownMenuItem>
+        <DropdownMenuItem className="hide-small ">Login</DropdownMenuItem>
+
         <DropdownMenuSeparator />
         <DropdownMenuItem>Help Center</DropdownMenuItem>
       </DropdownMenuContent>

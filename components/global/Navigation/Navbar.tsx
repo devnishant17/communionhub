@@ -14,13 +14,13 @@ const Navbar = () => {
       {/* pages */}
 
       <div className="relative flex items-center ms-4 justify-center gap-x-8">
-      <Link href="/Events" className="hover:text-[#00AEEF] text-gray-100 font-bold">
+      <Link href="/Events" className="hide-head hover:text-[#00AEEF] text-gray-100 font-bold">
         Event
         </Link>
-        <Link href="/About" className="hover:text-[#00AEEF] text-gray-100 font-bold">
+        <Link href="/About" className="hide-head hover:text-[#00AEEF] text-gray-100 font-bold">
         About
         </Link>
-        <button className="bg-gray-100 hover:bg-gray-400 text-[#00AEEF] font-semibold px-6 py-3 rounded-full">
+        <button className="bg-gray-100 hide-head hover:bg-gray-400 text-[#00AEEF] font-semibold px-6 py-3 rounded-full">
           Login
         </button>
         <UserButton />
