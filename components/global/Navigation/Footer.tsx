@@ -5,14 +5,14 @@ import { FaFacebookSquare, FaInstagram,FaLinkedinIn} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-  const [isCounsellingPopup, setIsCounsellingPopup] = useState(false);
+  const [isHelpPopup, setIsHelpPopup] = useState(false);
 
-  const toggleCounsellingPopup = () => {
-    setIsCounsellingPopup(!isCounsellingPopup);
+  const toggleHelpPopup = () => {
+    setIsHelpPopup(!isHelpPopup);
   };
 
-  const closeCounsellingPopup = () => {
-    setIsCounsellingPopup(false);
+  const closeHelpPopup = () => {
+    setIsHelpPopup(false);
   };
 
   return (
@@ -72,7 +72,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <button onClick={toggleCounsellingPopup} className="hover:underline">
+                  <button onClick={toggleHelpPopup} className="hover:underline">
                     Need Help?
                   </button>
                 </li>
@@ -132,11 +132,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {isCounsellingPopup && (
+      {isHelpPopup && (
         <>
           <div
             className="fixed inset-0 bg-black bg-opacity-30 z-40"
-            onClick={closeCounsellingPopup}
+            onClick={closeHelpPopup}
           ></div>
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
             <div className="bg-white rounded-lg shadow-lg flex flex-col lg:flex-row max-w-4xl max-h-[90vh] w-full my-10 overflow-auto relative">
@@ -156,7 +156,7 @@ const Footer = () => {
               {/* Right Section */}
               <div className="w-full lg:w-1/2 p-8 flex flex-col justify-between bg-gray-100">
                 <h3 className="text-lg font-semibold mb-4 text-center">
-                  Register Now To Consult A Communion
+                  Need Help?
                 </h3>
                 <p className="text-gray-600 text-center mb-4">
                   Get details and latest updates
@@ -213,7 +213,7 @@ const Footer = () => {
                 </form>
               </div>
               <button
-                onClick={closeCounsellingPopup}
+                onClick={closeHelpPopup}
                 className="absolute top-4 right-4 p-1 text-gray-500 hover:text-gray-700"
               >
                 ✕

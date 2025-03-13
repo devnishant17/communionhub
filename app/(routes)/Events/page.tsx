@@ -14,9 +14,38 @@ interface Event {
 }
 
 const eventsData: Event[] = [
-  { id: 1, title: "Diwali Festival", date: "2025-11-12", location: "Delhi", description: "A grand celebration of lights.", category: "Religious", image: "/images/diwali.jpg" },
-  { id: 2, title: "Food Drive", date: "2025-05-20", location: "Mumbai", description: "Charity event for feeding the needy.", category: "Charity", image: "/images/food-drive.jpg" },
-  { id: 3, title: "Music Concert", date: "2025-08-15", location: "Bangalore", description: "A social gathering with live music.", category: "Social", image: "/images/music-concert.jpg" },
+  { id: 1,
+     title: "Diwali Festival", 
+     date: "2025-11-12", 
+     location: "Delhi", 
+     description: "A grand celebration of lights.", 
+     category: "Religious", 
+     image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D" 
+    },
+  { id: 2, 
+    title: "Food Drive", 
+    date: "2025-05-20", 
+    location: "Mumbai", 
+    description: "Charity event for feeding the needy.", 
+    category: "Charity", 
+    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D"
+   },
+  { id: 3, 
+    title: "Music Concert", 
+    date: "2025-08-15", 
+    location: "Bangalore", 
+    description: "A social gathering with live music.", 
+    category: "Social", 
+    image: "https://plus.unsplash.com/premium_photo-1681487469745-91d1d8a5836b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXZlbnR8ZW58MHx8MHx8fDA%3D" 
+  },
+  { id: 4, 
+    title: "Video Concert", 
+    date: "2025-08-15", 
+    location: "Chennai", 
+    description: "A social gathering with live movies.", 
+    category: "Party Animal", 
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D" 
+  },
 ];
 
 const categories = ["All", "Religious", "Social", "Charity", "Party Animal", "Night Party"];
@@ -46,18 +75,18 @@ const EventListing = () => {
     setNewEvent({ id: 0, title: "", date: "", location: "", description: "", category: "", image: "" });
   };
 
-  const [isCounsellingPopup, setIsCounsellingPopup] = useState(false);
+  const [isAddPopup, setIsAddPopup] = useState(false);
 
-  const toggleCounsellingPopup = () => {
-    setIsCounsellingPopup(!isCounsellingPopup);
+  const toggleAddPopup = () => {
+    setIsAddPopup(!isAddPopup);
   };
 
-  const closeCounsellingPopup = () => {
-    setIsCounsellingPopup(false);
+  const closeAddPopup = () => {
+    setIsAddPopup(false);
   };
 
   return (
-    <div className="w-full mx-auto py-8 px-6">
+    <div className="w-full h-full  bg-cover bg-center mx-auto py-8 px-6"  >
       <h1 className="text-4xl font-extrabold uppercase mb-6 text-center border-t-4 border-b-4 border-gray-200 shadow-md shadow-blue-500 rounded-xl p-6">
         Event <span className="text-[#0289F5]">Listing</span>
       </h1>
@@ -78,7 +107,7 @@ const EventListing = () => {
       {/* Add Event */}
       <div className="flex justify-end">
   <button 
-    onClick={toggleCounsellingPopup} 
+    onClick={toggleAddPopup} 
     className="text-green-600 flex gap-4 bg-transparent rounded-2xl text-3xl px-4 py-2 hover:text-green-800 transition-all duration-200"
     aria-label="Add Event"
   >
@@ -166,10 +195,10 @@ const EventListing = () => {
           </button>
         </form>
       </div>
-      {isCounsellingPopup && (
+      {isAddPopup && (
   <>
     {/* Background Overlay */}
-    <div className="fixed inset-0 bg-gray-300 bg-opacity-30 z-40" onClick={closeCounsellingPopup}></div>
+    <div className="fixed inset-0 bg-gray-300 bg-opacity-30 z-40" onClick={closeAddPopup}></div>
 
     {/* Modal */}
     <div className="fixed inset-0 flex items-center justify-center z-50">
@@ -235,7 +264,7 @@ const EventListing = () => {
 
         {/* Close Button */}
         <button
-          onClick={closeCounsellingPopup}
+          onClick={closeAddPopup}
           className="absolute top-4 right-4 p-1 text-gray-500 hover:text-gray-700"
         >
           ✕
