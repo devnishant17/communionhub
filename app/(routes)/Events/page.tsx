@@ -19,7 +19,7 @@ const eventsData: Event[] = [
      date: "2025-11-12", 
      location: "Delhi", 
      description: "A grand celebration of lights.", 
-     category: "Religious", 
+     category: "Religious Party", 
      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D" 
     },
   { id: 2, 
@@ -27,7 +27,7 @@ const eventsData: Event[] = [
     date: "2025-05-20", 
     location: "Mumbai", 
     description: "Charity event for feeding the needy.", 
-    category: "Charity", 
+    category: "Social Party", 
     image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D"
    },
   { id: 3, 
@@ -35,7 +35,7 @@ const eventsData: Event[] = [
     date: "2025-08-15", 
     location: "Bangalore", 
     description: "A social gathering with live music.", 
-    category: "Social", 
+    category: "Social Party", 
     image: "https://plus.unsplash.com/premium_photo-1681487469745-91d1d8a5836b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXZlbnR8ZW58MHx8MHx8fDA%3D" 
   },
   { id: 4, 
@@ -48,7 +48,7 @@ const eventsData: Event[] = [
   },
 ];
 
-const categories = ["All", "Religious", "Social", "Charity", "Party Animal", "Night Party"];
+const categories = ["All", "Religious Party", "Social Party", "Party Animal", "Night Party"];
 
 const EventListing = () => {
   const [events, setEvents] = useState<Event[]>(eventsData);
