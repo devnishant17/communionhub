@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Communion",
-  description: "Connecting People Across Faiths & Interests",
+  title: "Corcus",
+  description: "Digital Marketing services in India",
   icons: {
-    icon: "/favicon.ico", // Ensure this file exists in the `public/` folder
+    icon: "/favicon.ico", 
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },

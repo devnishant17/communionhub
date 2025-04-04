@@ -10,11 +10,15 @@ function Discover() {
       {/* Left Section: Text */}
       <div className="lg:w-[472px] space-y-4">
         <h2 className="text-[#484848] text-3xl sm:text-4xl font-bold font-montserrat leading-tight">
-          Communion Rocks 
+          Let's Discuss
         </h2>
+        <div className="text-4xl font-extrabold bg-amber-50">
+  <p className="text-transparent stroke-black stroke-[11px]">LET’S DISCUSS</p>
+  <p className="text-black">YOUR NEXT PROJECT</p>
+</div>
         <div className="w-[140px] h-1.5 bg-[#484848] rounded-[3px]"></div>
         <p className="text-[#9a9a9a] text-sm sm:text-base font-normal font-montserrat leading-relaxed">
-        Communion is not just another platform—its a vibrant space that unites diverse faiths, beliefs, and traditions. By promoting collaboration and connection, were fostering a world where differences become strengths and unity becomes the norm.
+          Your Next project
         </p>
         <div className="flex flex-wrap items-center gap-4">
           {/* Ask A Question and List A Property on the same line */}

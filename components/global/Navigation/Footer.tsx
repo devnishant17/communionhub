@@ -16,14 +16,14 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col overflow-hidden px-4 mt-40 pb-8 bg-gray-200 border-t-2 border-gray-300">
+    <div className="flex flex-col overflow-hidden px-4 mt-10 pb-8 bg-gray-200 border-t-2 border-gray-300">
       <div className="flex flex-col py-8 w-full bg-gray-200 md:px-10 lg:px-16">
         <div className="w-full">
                       {/* Logo Section */}
-        <div className="flex-1 min-w-[200px] h-20">
+        <div className="flex-1 min-w-[200px] h-25">
               <img
                 loading="lazy"
-                src="https://communionhub.org/static/media/Logocommunion.0485ada0760e4748313f.png"
+                src="./static/logo.png"
                 className="object-contain w-45"
                 alt="Company Logo"
               />
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link href="/scholarship" className="hover:underline">
-                    Explore Events
+                    Explore Membership
                   </Link>
                 </li>
                 <li>
@@ -68,7 +68,7 @@ const Footer = () => {
               <ul className="space-y-3 text-sm text-zinc-600">
                 <li>
                   <Link href="/findEvents" className="hover:underline">
-                    Find a Event
+                    Book Your Domain
                   </Link>
                 </li>
                 <li>
@@ -126,8 +126,8 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="flex flex-wrap justify-between mt-10 text-sm text-zinc-700">
-          <div><span className="font-bold text-blue-700">©</span> 2025 <span className="font-bold text-red-700">DEV NISH</span> | All rights reserved</div>
-          <div>Created with love by <span className="text-red-700 font-bold"><a href="linkedin.com/in/nishant-kumar-2a64a5166/" target="_blank" rel="noopener noreferrer">NISHANT</a>
+          <div><span className="font-bold text-blue-700">©</span> 2025 <span className="font-bold uppercase text-red-700">Corcus</span> | All rights reserved</div>
+          <div>Created with love by <span className="text-[#FCB600] hover:text-black font-bold"><a href="linkedin.com/in/nishant-kumar-2a64a5166/" target="_blank" rel="noopener noreferrer">Corcus</a>
           </span></div>
         </div>
       </div>
